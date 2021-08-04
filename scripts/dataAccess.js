@@ -1,39 +1,23 @@
-import { database } from "./database.js"
+const API = "http://localhost:8088"
 
-// Getters
-export const getParents = () => {
-    return database.parents.map(parent => ({...parent}))
+export const fetchRequests = () => {
+    return fetch(`${API}/bookings`)
+        .then(response => response.json())
+        .then(
+            (bookings) => {
+                // Store the external state in application state
+                applicationState.bookings = bookings
+            }
+        )
 }
-export const getPerformers = () => {
-    return database.performers.map(performer => ({...performer}))
+
+export const applicationState = {
+    bookings: []
 }
+
 export const getBookings = () => {
-    return database.bookings.map(booking => ({...booking}))
+    return applicationState.bookings.map(booking => ({...booking}))
 }
-export const getEventBuilder = () => {
-    return database.eventBuilder.map(event => ({...event}))
-}
-
-// Setters
-export const setParent = (id) => {
-    return database.eventBuilder.parentId = id
-}
-export const setParent = (id) => {
-    return database.eventBuilder.parentId = id
-}
-export const setParent = (id) => {
-    return database.eventBuilder.parentId = id
-}
-export const setParent = (id) => {
-    return database.eventBuilder.parentId = id
-}
-export const setParent = (id) => {
-    return database.eventBuilder.parentId = id
-}
-export const setPerformer = (id) => {
-    return database.eventBuilder.performerId = id
-}
-
 
 export const addBooking = () => {
 
