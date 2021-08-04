@@ -1,7 +1,6 @@
 import { BookingForm } from "./BookingForm.js"
-import { getBookings } from "./dataAccess.js"
+import { Bookings } from "./Bookings.js"
 
-const bookings = getBookings()
 
 export const ButtonsAndLollipop = () => {
     return `<h1>Buttons and Lollipop Entertainment</h1>
@@ -11,8 +10,8 @@ export const ButtonsAndLollipop = () => {
     </section>
 
     <section class="bookings">
-        <h2>Booked events will go here</h2>
-        ${getBookings()}
+        <h2>Upcoming Events</h2>
+        ${Bookings()}
     </section>
     `
 }

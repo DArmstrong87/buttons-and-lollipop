@@ -12,14 +12,13 @@
     "bookings": [
         {
             "id": 1,
-            "parentId": 1,
-            "parentName": "",
-            "childName": "",
-            "address": "",
+            "parentName": "Karen Anderson",
+            "childName": "Joey Anderson",
+            "address": "321 Evergreen Terrrace",
             "numOfAttendees": 12,
-            "reservationDate": "date",
+            "date": "8/4/2021",
             "length": 70,
-            "performerId": 1
+            "performer": "Lollipop the Clown"
         }
     ],
     "completedBookings": []
