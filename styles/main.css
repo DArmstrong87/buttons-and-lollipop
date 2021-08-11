@@ -1,0 +1,12 @@
+@import url('details.css');
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: skyblue;
+}
+
+h1 {
+    text-align: center;
+    border: 10px dotted yellow;
+    width: fit-content;
+}
