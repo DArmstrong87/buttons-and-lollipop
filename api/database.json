@@ -1,25 +1,55 @@
 {
-    "performers": [
-        {
-            "id": 1,
-            "name": "Lollipop the Clown"
-        },
-        {
-            "id": 2,
-            "name": "Buttons the Clown"
-        }
-    ],
-    "bookings": [
-        {
-            "id": 1,
-            "parentName": "Karen Anderson",
-            "childName": "Joey Anderson",
-            "address": "321 Evergreen Terrrace",
-            "numOfAttendees": 12,
-            "date": "8/4/2021",
-            "length": 70,
-            "performer": "Lollipop the Clown"
-        }
-    ],
-    "completedBookings": []
+  "performers": [
+    {
+      "id": 1,
+      "name": "Lollipop the Clown"
+    },
+    {
+      "id": 2,
+      "name": "Buttons the Clown"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "parentName": "Karen Anderson",
+      "childName": "Joey Anderson",
+      "address": "321 Evergreen Terrrace",
+      "numOfAttendees": 12,
+      "eventDate": "8/4/2021",
+      "length": 70,
+      "performer": "Lollipop the Clown"
+    },
+    {
+      "parentName": "Danny",
+      "address": "123",
+      "childName": "Rocco",
+      "numOfAttendees": "10",
+      "length": "90",
+      "performer": "Lollipop the Clown",
+      "eventDate": "2021-08-11",
+      "id": 2
+    },
+    {
+      "parentName": "Ashley",
+      "address": "1227 SS Drive",
+      "childName": "Pippi",
+      "numOfAttendees": "8",
+      "length": "60",
+      "performer": "Buttons the Clown",
+      "eventDate": "2021-08-14",
+      "id": 3
+    },
+    {
+      "parentName": "Joey",
+      "address": "456",
+      "childName": "Filip",
+      "numOfAttendees": "18",
+      "length": "120",
+      "performer": "Buttons the Clown",
+      "eventDate": "2021-08-15",
+      "id": 4
+    }
+  ],
+  "completedBookings": []
 }

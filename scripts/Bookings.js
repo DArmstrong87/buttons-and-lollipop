@@ -1,10 +1,9 @@
 import { getBookings } from "./dataAccess.js";
-const bookings = getBookings()
 
 const listBookings = (booking) => {
     return `
     <li>
-        ${booking.parentName} booked ${booking.performer} for ${booking.childName} for a special event on ${booking.date}.
+        ${booking.parentName} booked ${booking.performer} for ${booking.childName} for a special event on ${booking.eventDate}. The address is ${booking.address} and ${booking.numOfAttendees} people will be attending.
     </li>
     `
 }

@@ -14,3 +14,10 @@ const renderAll = () => {
 }
 
 renderAll()
+
+document.addEventListener("stateChanged",
+    change => {
+        renderAll()
+        console.log("State changed")
+    }
+)
