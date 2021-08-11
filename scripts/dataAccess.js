@@ -36,3 +36,12 @@ export const postRequest = (userBookingRequest) => {
 export const getBookings = () => {
     return applicationState.bookings.map(booking => ({ ...booking }))
 }
+
+export const deleteEvent = (id) => {
+    return fetch(`${API}/bookings/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                document.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
+}

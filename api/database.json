@@ -21,16 +21,6 @@
       "performer": "Lollipop the Clown"
     },
     {
-      "parentName": "Danny",
-      "address": "123",
-      "childName": "Rocco",
-      "numOfAttendees": "10",
-      "length": "90",
-      "performer": "Lollipop the Clown",
-      "eventDate": "2021-08-11",
-      "id": 2
-    },
-    {
       "parentName": "Ashley",
       "address": "1227 SS Drive",
       "childName": "Pippi",
