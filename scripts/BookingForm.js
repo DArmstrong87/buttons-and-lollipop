@@ -65,5 +65,5 @@ export const BookingForm = () => {
     <button class="button" id="bookEvent">Book Event</button>
 `
 
-return html
+    return html
 }

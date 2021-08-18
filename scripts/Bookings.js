@@ -2,7 +2,7 @@ import { getBookings, deleteEvent } from "./dataAccess.js";
 
 document.addEventListener("click",
     click => {
-        if (click.target.id.startsWith('booking')){
+        if (click.target.id.startsWith('booking')) {
             const [, bookingId] = click.target.id.split('--')
             deleteEvent(parseInt(bookingId))
         }
