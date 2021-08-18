@@ -7,3 +7,38 @@
 .radio-buttons {
     flex-direction: row;
 }
+
+.event-container {
+    display: flex;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    flex-basis: 33%;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-right: 5px;
+    background-color: lightcyan;
+}
+.event-details li{
+    padding: 3px;
+}
+.event-details li:nth-child(even){
+    background-color: rgb(180, 206, 206);
+}
+
+.all-events {
+    display: flex;
+}
+
+.delete-event {
+    align-self: center;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.500);
+    background-color: lightcoral;
+}

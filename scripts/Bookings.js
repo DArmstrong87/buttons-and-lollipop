@@ -11,16 +11,26 @@ document.addEventListener("click",
 
 const listBookings = (booking) => {
     return `
-    <li>
-        ${booking.parentName} booked ${booking.performer} for ${booking.childName} for a special event on ${booking.eventDate}. The address is ${booking.address} and ${booking.numOfAttendees} people will be attending.
-        <button class="delete-event" id="booking--${booking.id}">Delete event</button>
-    </li>
+    <section class="event-container">
+        <ul class="event-details">
+            <li>
+            ${booking.parentName} booked ${booking.performer} for ${booking.childName}
+            </li>
+            <li>Event Date: ${booking.eventDate}</li>
+            <li>Address: ${booking.address}</li>
+            <li>Number of attendees: ${booking.numOfAttendees}</li>
+        </ul>
+        <select class="performer">
+            
+        </select>
+        <button class="delete-event" id="booking--${booking.id}">Delete Event</button>
+    </section>
     `
 }
 
 export const Bookings = () => {
     const bookings = getBookings()
-    let html = `<ul>`
+    let html = `<ul class="all-events">`
 
     const bookingList = bookings.map(listBookings)
     html += bookingList.join("")
