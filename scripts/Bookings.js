@@ -1,4 +1,4 @@
-import { getBookings, deleteEvent } from "./dataAccess.js";
+import { getBookings, deleteEvent, getPerformers } from "./dataAccess.js";
 
 document.addEventListener("click",
     click => {
@@ -9,7 +9,10 @@ document.addEventListener("click",
     }
 )
 
+// document.addEventListener
+
 const listBookings = (booking) => {
+    const clowns = getPerformers()
     return `
     <section class="event-container">
         <ul class="event-details">

@@ -1,7 +1,8 @@
 const API = "http://localhost:8088"
 
 export const applicationState = {
-    bookings: []
+    bookings: [],
+    clowns: []
 }
 
 export const fetchRequests = () => {
@@ -11,6 +12,16 @@ export const fetchRequests = () => {
             (bookings) => {
                 // Store the external state in application state
                 applicationState.bookings = bookings
+            }
+        )
+}
+export const fetchPerformers = () => {
+    return fetch(`${API}/performers`)
+        .then(response => response.json())
+        .then(
+            (performer) => {
+                // Store the external state in application state
+                applicationState.performers = performer
             }
         )
 }
@@ -35,6 +46,9 @@ export const postRequest = (userBookingRequest) => {
 
 export const getBookings = () => {
     return applicationState.bookings.map(booking => ({ ...booking }))
+}
+export const getPerformers = () => {
+    return applicationState.performers.map(performer => ({ ...performer }))
 }
 
 export const deleteEvent = (id) => {
